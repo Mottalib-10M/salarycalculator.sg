@@ -20,7 +20,7 @@ const pageUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
     <link rel="canonical" href={pageUrl} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="robots" content="index, follow" />
-    <meta name="author" content="Mottalib Radif" />
+    <meta name="author" content="Radif Partners" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
@@ -89,12 +89,10 @@ const pageUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
 
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Mottalib Radif",
+      "@type": "Organization",
+      "name": "Radif Partners",
       "jobTitle": "Personal Finance & Taxation Expert",
-      "description": "MBA INSEAD graduate, passionate about Singapore personal finance. Specialised in CPF contributions, income tax, and salary optimisation.",
-      "alumniOf": { "@type": "EducationalOrganization", "name": "INSEAD" },
-      "image": "https://salarycalculator.sg/team/mottalib-radif.jpg",
+      "description": "Publisher of calculators and practical guides",
       "url": "https://salarycalculator.sg/about/"
     })} />
 
